@@ -2,15 +2,15 @@
 
 # Paulo — individual extension and read-only test evidence
 
-Status: individual work checked against the assignment text supplied on 2026-11-01. Parts 1-6 are the current scope; remote publication remains blocked by repository permissions. Parts 7-10 require later team decisions and assigned Functional Ideas. No team selection, team approval, stakeholder approval, or final backlog generation is claimed.
+Status: historical individual testing checked against the assignment supplied on 2026-11-01. The personal agent is now published on individual/pauloavina-it-user-stories using pauloavina-it. The later user-authorized working updates to #73-#96 are recorded separately in issue-update-evidence.json. No team selection, team approval, stakeholder approval, or final backlog generation is claimed.
 
 ## Provenance and change
 - Repository: https://github.com/Sebasriquelme10/Software-Requeriments
 - Base commit: d625935ea9982f1566da7bb4f707e7497d5192df
 - Requested baseline: .github/agents/requirements-analyst-chris-24-byte.agent.md, blob 3222605516e2f499e5b4b78dc70ba0c1f4add587.
 - Use Case behavior reference: .github/agents/use-case-analyst-Chris-24-byte.agent.md, blob a6b8a86299ad1fdcf259654d8e8806cfd53ef91b.
-- Personal agent: .github/agents/requirements-analyst-Nachoag4.agent.md.
-- Personal branch: individual/Nachoag4-user-stories (local; remote branch creation returned GitHub 403 Resource not accessible by integration).
+- Current personal agent: .github/agents/requirements-analyst-pauloavina-it.agent.md (same tested extension, with the personal identifier corrected).
+- Current personal branch: individual/pauloavina-it-user-stories (published through pauloavina-it). The earlier Nachoag4 publication attempts failed with 403; they are historical setup evidence only.
 - Baseline story sections are preserved; additions specify two artifact modes, evidence, relationship verification, no invented technical contracts, source conflicts, duplicate handling, and a read-only override for the old Use Case publishing step.
 
 ## Method and limits
@@ -19,7 +19,7 @@ Manual instruction-following evaluation in this Codex chat, using the candidate 
 
 Read all four pages of the issue collection (state=all, per_page=100), then read current sub-issue collections for #72, #97, #101. Read full bodies of relevant cases/stories, including #308, #311, #314, #316 discovered during that later relationship check. The repository was changing during the reads: the initial collection ended at #307, while the subsequent #101 read contained newer stories. Therefore this is a bounded snapshot, not a claim that no other duplicates exist. Comments, all historical revisions, and all other issue hierarchies were not exhaustively reviewed.
 
-Source evidence is in source-snapshot.json (number, title, body, updated_at, source URL) and relationship-snapshot.json. This package does not modify source issues. Every issue/sub-issue API call used for the evaluation was GET/read-only. The only attempted GitHub mutation was the authorized personal branch creation, which failed with 403.
+Historical test-source evidence is in source-snapshot.json (number, title, body, updated_at, source URL) and relationship-snapshot.json. The tests did not modify source issues. Every issue/sub-issue API call used for those tests was GET/read-only. The later working phase updates parent issue bodies only, as explicitly requested by the user; it is not presented as read-only testing or final story creation.
 
 ## T1 — duplicate detection and non-1:1 boundaries
 Input: “In User Story analysis mode, analyze Functional Idea #72 against all available Use Cases and User Stories. Propose only; stop before full drafting.”
@@ -79,4 +79,4 @@ Result: PASS (manual dry run plus static checks). No claim of a production or fi
 ## Pending review
 Static verification passed after normalizing Windows line endings: unchanged baseline body, exact original Use Case template, complete draft headings/fields, and balanced Markdown code fences. Git whitespace check passed. Baseline agent files were not modified.
 
-The assignment has now been read. It requires meaningful testing but does not explicitly mandate the Copilot runtime; these tests are transparently manual Codex evaluations, not Copilot execution evidence. Resolve candidate boundaries with a human reviewer before real full specification generation. Both the GitHub connector and an authenticated Git push denied remote publication (403; push denied to Nachoag4). Publish the personal branch when repository write access is available; do not create or modify issues during the individual phase. See assignment-checklist.md for the deliverable mapping.
+The assignment has been read. It requires meaningful testing but does not explicitly mandate the Copilot runtime; these tests are transparently manual Codex evaluations, not Copilot execution evidence. The personal branch publication is complete under pauloavina-it. Resolve candidate boundaries with a human reviewer and recover the missing source Use Cases before full specification generation. Do not treat the later working issue updates as individual read-only testing. See assignment-checklist.md for the deliverable mapping.

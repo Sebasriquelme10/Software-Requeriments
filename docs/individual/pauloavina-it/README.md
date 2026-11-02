@@ -11,7 +11,7 @@ Baseline: requester-specified Chris requirements agent at d625935ea9982f1566da7b
 - All 24 native sub-issue lists were empty. Source Use Cases must be recovered/clarified before final functional coverage can be claimed.
 - assigned-idea-proposals.md records the concrete working issue updates requested by the user. They are proposals, not complete approved specifications.
 - No new team standard is claimed; no issue/sub-issue creation is performed by these updates.
-- Freshness and no-overwrite checks must pass before each body update; verify remote bodies after publishing. Results will be recorded in issue-update-evidence.json.
+- Freshness and no-overwrite checks passed before each body update. All 24 remote bodies were read back and verified; their original text was preserved. Results are recorded in issue-update-evidence.json. There were 31 candidate proposals, zero new issues, and zero relationship mutations.
 
 ## Findings requiring review
 - #85 may reuse #285/#211 but mutual visibility and the classmate/colleague distinction need a decision.
